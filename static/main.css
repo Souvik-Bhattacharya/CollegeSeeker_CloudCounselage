@@ -290,7 +290,7 @@ footer {
     }
 
     #con {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .links {
