@@ -1,0 +1,74 @@
+<div id="home">
+    <div id="tagline">
+        <img src="logo.svg" alt="Logo" id="homeLogo">
+        <p id="title">Seeking College?</p>
+        <p id="subTitle">We have 6K+ Indian Collges with different streams!</p>
+        <button type="button" id="searchBtn">Search Now</button>
+    </div>
+
+    <div id="featured">
+        <h1>Top 10 Colleges in India</h1>
+        <div id="homeColleges">
+            {{#each data}}
+            <div class="homeCollegeCard">
+                <div class="homeCollegeInfo">
+                    <h3>{{this.College_Name}}</h3>
+                    <p>{{this.State}} | {{this.Stream}}</p>
+                    <p><b>UG fees: </b>{{this.UG_fee}} Rs. | <b>PG fees: </b>{{this.PG_fee}} Rs.</p>
+                </div>
+                <div class="homeCollegeStatsContainer">
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Rating</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Rating}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Rating}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Academic</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Academic}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Academic}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Accommodation</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Accommodation}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Accommodation}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Faculty</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Faculty}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Faculty}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Infrastructure</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Infrastructure}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Infrastructure}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Placement</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Placement}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Placement}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeCollegeStats">
+                        <div class="homeCollegeSubject">Social_Life</div>
+                        <div class="homeCollegeProgress-bar" value="{{this.Social_Life}}">
+                            <div class="homeCollegeProgress-line" style="max-width: calc({{this.Social_Life}}*10%)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

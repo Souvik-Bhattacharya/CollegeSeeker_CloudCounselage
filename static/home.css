@@ -1,0 +1,350 @@
+#tagline {
+    background-image: url("homeBG.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#homeLogo {
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#title {
+    color: #eceaf9;
+    text-shadow: 2px 2px 3px #eceaf9;
+    font-size: 4rem;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#subTitle {
+    color: #eceaf9;
+    text-shadow: 1px 1px 3px #eceaf9;
+    font-size: 2rem;
+    padding-top: 20px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#searchBtn {
+    cursor: pointer;
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: darkorange;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+#searchBtn:hover {
+    background-color: rgb(249, 164, 61);
+}
+
+#featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: whitesmoke;
+    overflow: scroll;
+}
+
+#featured h1 {
+    padding: 100px 0px;
+    text-align: center;
+    font-size: 3rem;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#homeColleges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.homeCollegeCard {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 20px;
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+    border-radius: 10px;
+    border-color: #dfe9f3;
+    box-shadow: 0px 2px 20px #00000026;
+    -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+/* .homeCollegePic {
+    height: 559.97px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background: #eceaf9;
+}
+
+.homeCollegeLogo {
+    height: 200px;
+    width: 200px;
+} */
+
+/* .homeCollege {
+    width: 400px;
+    padding: 20px;
+} */
+
+.homeCollegeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #eceaf9;
+    padding: 10px;
+}
+
+.homeCollegeInfo h3 {
+    padding: 10px;
+}
+
+.homeCollegeInfo p {
+    padding: 10px 5px 10px 0px;
+}
+
+.homeCollegeStatsContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.homeCollegeStats {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    /* width: 400px; */
+}
+
+.homeCollegeSubject {
+    font-weight: thin;
+    color: rgb(30, 48, 80);
+    padding-bottom: 15px;
+}
+
+.homeCollegeProgress-bar {
+    height: 1px;
+    background-color: rgb(154, 146, 146);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.homeCollegeProgress-bar::after {
+    position: relative;
+    content: attr(value);
+    top: -35px;
+    left: 90%;
+}
+
+.homeCollegeProgress-line {
+    width: 0%;
+    height: 3px;
+    background-color: rgb(234, 100, 100);
+    border-radius: 15px;
+    top: -1px;
+    animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 30px 8%;
+    }
+}
+
+@media(max-width: 568px) {
+    .container .row {
+        flex-direction: column;
+    }
+
+    .container .main-title h1 {
+        font-size: 36px;
+    }
+
+    .container .row {
+        margin-top: 30px;
+    }
+
+    .row .col:nth-child(2) {
+        margin-top: 20px;
+    }
+}
+
+@keyframes animate {
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

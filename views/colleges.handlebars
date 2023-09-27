@@ -1,0 +1,61 @@
+<div id="streamSearch">
+    <h1>Showing {{count}} {{stream}} Colleges</h1>
+    <div id="streamColleges">
+        {{#each data}}
+        <div class="streamCollegeCard">
+            <div class="streamCollegeInfo">
+                <h3>{{this.College_Name}}</h3>
+                <p>{{this.State}} | {{this.Stream}}</p>
+                <p><b>UG fees: </b>{{this.UG_fee}} Rs. | <b>PG fees: </b>{{this.PG_fee}} Rs.</p>
+            </div>
+            <div class="streamCollegeStatsContainer">
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Rating</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Rating}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Rating}}*10%)"></div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Academic</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Academic}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Academic}}*10%)"></div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Accommodation</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Accommodation}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Accommodation}}*10%)">
+                        </div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Faculty</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Faculty}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Faculty}}*10%)"></div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Infrastructure</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Infrastructure}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Infrastructure}}*10%)">
+                        </div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Placement</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Placement}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Placement}}*10%)"></div>
+                    </div>
+                </div>
+                <div class="streamCollegeStats">
+                    <div class="streamCollegeSubject">Social_Life</div>
+                    <div class="streamCollegeProgress-bar" value="{{this.Social_Life}}">
+                        <div class="streamCollegeProgress-line" style="max-width: calc({{this.Social_Life}}*10%)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

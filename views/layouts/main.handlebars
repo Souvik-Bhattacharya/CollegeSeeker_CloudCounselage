@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Seeker</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="colleges.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <div id="form">
+        <div id="inputBox">
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <img src="logo.svg" alt="Logo" id="formLogo">
+            <h1>Search Colleges</h1>
+            <form action="/search" method="POST">
+                <div class="input">
+                    <label for="college">College:</label>
+                    <input type="text" name="college" id="college" placeholder="Enter College" required>
+                </div>
+                <div class="input">
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+                        <option value='Tamil nadu'>Tamil nadu</option>
+                        <option value='Maharashtra'>Maharashtra</option>
+                        <option value="Uttar pradesh">Uttar pradesh</option>
+                        <option value="Delhi ncr">Delhi ncr</option>
+                        <option value="Andhra pradesh">Andhra pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Madhya pradesh">Madhya pradesh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="West bengal">West bengal</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Himachal pradesh">Himachal pradesh</option>
+                        <option value="Jammu">Jammu</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Arunachal pradesh">Arunachal pradesh</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Andaman">Andaman</option>
+                        <option value="Dadra">Dadra</option>
+                        <option value="Daman">Daman</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="stream">Stream:</label>
+                    <select id="stream" name="stream" required>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Management">Management</option>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Hotel-management">Hotel-management</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Law">Law</option>
+                    </select>
+                </div>
+                <input type="submit" id="btn">
+            </form>
+            <img src="login-box-blobs.png" alt="" id="blob">
+        </div>
+    </div>
+    <nav id="navbar">
+        <div id="ham">
+            <i id="hamIcon" class="fa-solid fa-bars fa-lg"></i>
+            <div id="hamTabs">
+                <i class="fa-solid fa-xmark" id="closeHam"></i>
+                <h2>Navigation</h2>
+                <br />
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <div id="dropDownStreams">
+                    <a id="dropBtnStreams" href="#">Streams</a>
+                    <div id="dropBoxStreamsHam">
+                        <a href="/Engineering">Engineering</a>
+                        <a href="/Management">Management</a>
+                        <a href="/Science">Science</a>
+                        <a href="/Commerce">Commerce</a>
+                        <a href="/Arts">Arts</a></li>
+                        <a href="/Hotel-management">Hotel-management</a>
+                        <a href="/Agriculture">Agriculture</a>
+                        <a href="/Medical">Medical</a>
+                        <a href="/Pharmacy">Pharmacy</a>
+                        <a href="/Law">Law</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i id="logo" class="fa-solid fa-graduation-cap"><a href="/">College Seeker</a></i>
+        <div id="tabs">
+            <i class="fa-solid fa-house"><a href="/">Home</a></i>
+            <i class="fa-solid fa-address-card"><a href="/about">About</a></i>
+            <i class="fa-solid fa-book" id="dropDownStreams">
+                <a id="dropBtnStreams" href="#">Streams</a>
+                <div id="dropBoxStreams">
+                    <a href="/Engineering">Engineering</a>
+                    <a href="/Management">Management</a>
+                    <a href="/Science">Science</a>
+                    <a href="/Commerce">Commerce</a>
+                    <a href="/Arts">Arts</a></li>
+                    <a href="/Hotel-management">Hotel-management</a>
+                    <a href="/Agriculture">Agriculture</a>
+                    <a href="/Medical">Medical</a>
+                    <a href="/Pharmacy">Pharmacy</a>
+                    <a href="/Law">Law</a>
+                </div>
+            </i>
+        </div>
+        <i class="fa-solid fa-magnifying-glass fa-lg" id="search"></i>
+    </nav>
+    {{{body}}}
+    <script src="main.js"></script>
+    <script src="openSearch.js"></script>
+    <script src="closeSearch.js"></script>
+    <script src="openHam.js"></script>
+    <script src="closeHam.js"></script>
+</body>
+
+<footer>
+    <div id="footerLogo">
+        <img src="logo.svg" alt="Logo">
+        <h3>&copy; 2023 College Seeker</h3>
+        <p>Designed and Developed to provide easy way of searching Indian Colleges</p>
+    </div>
+    <div id="con">
+        <div class="links">
+            <h1>Links</h1>
+            <div class="footerTabs">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+        <div class="links">
+            <h1>Streams</h1>
+            <div class="footerTabs">
+                <a href="/Engineering">Engineering</a>
+                <a href="/Management">Management</a>
+                <a href="/Science">Science</a>
+                <a href="/Commerce">Commerce</a>
+                <a href="/Arts">Arts</a>
+                <a href="/Hotel-management">Hotel-management</a>
+                <a href="/Agriculture">Agriculture</a>
+                <a href="/Medical">Medical</a>
+                <a href="/Pharmacy">Pharmacy</a>
+                <a href="/Law">Law</a>
+            </div>
+        </div>
+        <div class="links">
+            <h1>Social</h1>
+            <div id="social">
+                <div class="link">
+                    <img src="linkedin.svg" alt="">
+                    <a href="https://www.linkedin.com/in/souvik-bhattacharya763" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                </div>
+                <div class="link">
+                    <img src="github.svg" alt="">
+                    <a href="https://github.com/Souvik-Bhattacharya/CollegeSeeker_CloudCounselage" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
+                <div class="link">
+                    <img src="email.svg" alt="">
+                    <a href="mailto:souvikbh12@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

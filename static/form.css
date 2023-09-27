@@ -1,0 +1,105 @@
+#form {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    inset: 0;
+    z-index: 102;
+    display: none;
+    overflow: hidden;
+    border: 1px solid rgb(218, 220, 224);
+    box-shadow: 0px 2px 20px #00000026;
+}
+
+#form::before{
+    content: "";
+    /* background: lightsteelblue; */
+    background-image: url("BG.jpg");
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#inputBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(218, 220, 224);
+    box-shadow: 0px 2px 20px #00000026;
+    border-radius: 24px;
+    -webkit-box-align: center;
+    width: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#close{
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#formLogo{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+#inputBox h1 {
+    padding: 20px 10px 0px 10px;
+}
+
+#blob {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#inputBox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#inputBox input, select{
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 15px;
+}
+
+#btn {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(184, 172, 172);
+    color: black;
+}
+
+@media screen and (max-width: 1024px){
+    #inputBox{
+        width: 300px;
+    }
+}

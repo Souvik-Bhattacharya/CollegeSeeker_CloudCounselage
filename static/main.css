@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+    color: rgb(30, 48, 80);
+}
+
+
+#navbar {
+    inset: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0px 2px 20px #00000026;
+}
+
+#navbar::after {
+    content: "";
+    inset: 0;
+    background: #eceaf9;
+    position: absolute;
+    z-index: -1;
+}
+
+#logo {
+    /* padding: 0px 50px; */
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    color: #59566f;
+}
+
+#logo a:hover {
+    color: #59566f;
+}
+
+#logo a {
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+#tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabs i {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#tabs i:hover {
+    color: #59566f;
+}
+
+#tabs a {
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+#tabs a:hover {
+    color: #59566f;
+}
+
+#dropDownStreams {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+#dropBtnStreams {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+#dropBoxStreams {
+    display: none;
+    position: absolute;
+    background: #eceaf9;
+    z-index: 101;
+    min-width: 160px;
+    padding: 10px;
+    box-shadow: 0px 2px 20px #00000026;
+}
+
+#dropBoxStreams a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+#dropBoxStreams a:hover {
+    background: #f3f3f7;
+}
+
+#dropDownStreams:hover #dropBoxStreams {
+    display: block;
+}
+
+#search {
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+#search {
+    color: #59566f;
+}
+
+#ham {
+    padding: 0px 10px;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+#hamIcon {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+#hamTabs {
+    display: none;
+    position: absolute;
+    background: #eceaf9;
+    z-index: 101;
+    min-width: 160px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px #00000026;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+}
+
+#closeHam {
+    align-self: last baseline;
+    padding-left: 140px;
+    cursor: pointer;
+}
+
+#hamTabs h2 {
+    padding: 15px;
+}
+
+#hamTabs a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(30, 48, 80);
+}
+
+#dropBoxStreamsHam {
+    display: none;
+    position: absolute;
+    background: #eceaf9;
+    z-index: 101;
+    padding: 10px;
+}
+
+#dropBoxStreamsHam a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+#dropBoxStreamsHam a:hover {
+    background: #f3f3f7;
+}
+
+#dropDownStreams:hover #dropBoxStreamsHam {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #eceaf9;
+    padding: 100px;
+}
+
+#footerLogo {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footerLogo img {
+    height: 100px;
+    width: 100px;
+}
+
+#footerLogo p {
+    padding: 20px 0px;
+}
+
+#con {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.footerTabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.footerTabs a {
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.footerTabs a:hover {
+    background: #f3f3f7;
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.link img {
+    height: 20px;
+    width: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.link a:hover {
+    background: #f3f3f7;
+}
+
+@media screen and (max-width: 1200px) {
+    #tabs {
+        display: none;
+    }
+
+    #ham {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #con {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 15px;
+    }
+
+}
